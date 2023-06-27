@@ -1,6 +1,7 @@
 import ToDo from "../../components/TasksComponents/ToDo/ToDo"
-
+import Formulario from "../../components/TasksComponents/Form/Formulario"
 function Task() {
+
 
     const tarefas = [
         'Tarefa 1',
@@ -12,6 +13,7 @@ function Task() {
     return (
         <>
             <h2>Tarefas</h2>
+            <Formulario />
             <ToDo tarefas={tarefas}/>
         </>
     )
