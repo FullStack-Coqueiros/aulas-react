@@ -5,17 +5,28 @@ import {
 } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home/Home.jsx'
+import Empresa from './pages/Empresa/Empresa.jsx'
+import Empresas from './pages/Empresas/Empresas.jsx'
 import Header from './components/Header/Header.jsx'
 
 function App() {
 
   return (
     <div className='App'>
-      {/* <h1>APP</h1> */}
       <Router>
         <Header />
+
         <Routes>
+          {/* localhost:port/empresa */}
           <Route path='/' exact element={<Home />} />
+          <Route path='empresas' element={<Empresas />} />
+          <Route path='empresa/:empresa' element={<Empresa />} />
+
+          {/* localhost:5137/empresas/NOME_EMPRESA */}
+          {/* localhost:5137/empresas/audaces */}
+          {/* const empresa = 'audaces'  */}
+          {/* <Route path='empresas/:empresa' exact element={<Empresas />} /> */}
+
         </Routes>
       </Router>
     </div>

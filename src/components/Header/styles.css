@@ -1,0 +1,20 @@
+.menu-header {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    padding: 30px 40px;
+}
+
+.menu-header li {
+    margin: 0 10px;
+}
+
+a,
+a:visited {
+    color: #0f0f0f;
+    text-decoration: none !important;
+}
+
+.menu-item .active {
+    color: #F60074 !important;
+}
