@@ -22,6 +22,7 @@ function Home() {
         } 
         return <span>Não existe notícia.</span>
     }
+    
 
     const handleClick = () => {
         navigate('/empresa/senai')
