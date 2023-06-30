@@ -1,0 +1,9 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 6px 10px;
+    border-radius: 4px;
+}

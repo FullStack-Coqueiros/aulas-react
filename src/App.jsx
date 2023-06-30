@@ -8,6 +8,7 @@ import Home from './pages/Home/Home.jsx'
 import Empresa from './pages/Empresa/Empresa.jsx'
 import Empresas from './pages/Empresas/Empresas.jsx'
 import Header from './components/Header/Header.jsx'
+import Login from './pages/Login/Login.jsx'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           {/* localhost:port/empresa */}
           <Route path='/' exact element={<Home />} />
+          <Route path='login' exact element={<Login />} />
           <Route path='empresas' element={<Empresas />} />
           <Route path='empresa/:empresa' element={<Empresa />} />
 
