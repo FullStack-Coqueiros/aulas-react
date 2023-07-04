@@ -2,8 +2,10 @@ import { useNavigate } from "react-router-dom";
 
 import CardNoticia from "../../components/HomeComponents/CardNoticia/CardNoticia"
 import ComponenteFilho from "../../components/HomeComponents/ComponenteFilho/ComponenteFilho"
+import { getAll } from "../../services/web";
 
 function Home() {
+    getAll()
 
     const navigate = useNavigate()
 

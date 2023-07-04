@@ -1,0 +1,76 @@
+{
+    "noticias": [
+      {
+        "id": 1,
+        "titulo": "Barcelona fecha acordo por Vitor Roque, diz imprensa europeia",
+        "categoria": "esportes",
+        "autor": "Autor 1",
+        "imagem": {
+          "src": "https://s2.glbimg.com/rNfBarmzRtj7pz4SijCL4XVtYLI=/111x9:438x193/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/3/x/3R0vBgTXunfY7naCOzUQ/capxsccp-1.jpg",
+          "alt": "Imagem 1"
+        },
+        "data": "2023-07-03",
+        "content": "<p>Conteúdo da notícia 1.</p>"
+      },
+      {
+        "id": 2,
+        "titulo": "LISTA: os carros mais vendidos no Brasil no 1º semestre",
+        "categoria": "noticias",
+        "autor": "Autor 2",
+        "imagem": {
+          "src": "https://s2.glbimg.com/TVQt3JmunUPZB6s09uMJGQk_gFs=/0x237:2583x1690/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/D/J/BLpATZQr2fWzKxQDZCEg/fup20211201070.jpg",
+          "alt": "Imagem 2"
+        },
+        "data": "2023-07-02",
+        "content": "<p>Conteúdo da notícia 2.</p>"
+      },
+      {
+        "id": 3,
+        "titulo": "Kate Middleton se empolga com homenagem a Federer, e reação da esposa chama a atenção",
+        "categoria": "entretenimento",
+        "autor": "Autor 3",
+        "imagem": {
+          "src": "https://s2.glbimg.com/5zx_5ABJTUFUYO9W_NVkmG9EgUo=/0x0:1200x630/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/s2-monet.glbimg.com/b0H_Cs3sqwi2XU-wy6ITIpQ6Idg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_e7c91519bbbb4fadb4e509085746275d/internal_photos/bs/2023/G/d/nTEcYhQFSvTvi9H4Rnfg/gettyimages-15138858951.jpg",
+          "alt": "Imagem 3"
+        },
+        "data": "2023-07-01",
+        "content": "<p>Conteúdo da notícia 3.</p>"
+      },
+      {
+        "id": 4,
+        "titulo": "Ídolo de Vasco e Cruzeiro, Dedé se aposenta aos 35 anos: 'Amadureci a ideia'",
+        "categoria": "esportes",
+        "autor": "Autor 4",
+        "imagem": {
+          "src": "https://s2.glbimg.com/fmug-qeCYOwOu3rp1GIqykzUluA=/0x33:3000x1721/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/s.glbimg.com/es/ge/f/original/2018/11/18/20181118165918_5bf1b68628093.jpg",
+          "alt": "Imagem 4"
+        },
+        "data": "2023-07-04",
+        "content": "<p>Conteúdo da notícia 4.</p>"
+      },
+      {
+        "id": 5,
+        "titulo": "Descoberta raríssima feita há 40 anos na BA é divulgada: 'Achado espetacular e único'",
+        "categoria": "noticias",
+        "autor": "Autor 5",
+        "imagem": {
+          "src": "https://s2.glbimg.com/mrf-GaoEg0xaBHLr8abYJuyRQwM=/300x291:1280x842/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/e/3/LQftylT3GcpVV2wydDPg/preguica-gigante.jpeg",
+          "alt": "Imagem 5"
+        },
+        "data": "2023-07-05",
+        "content": "<p>Conteúdo da notícia 5.</p>"
+      },
+      {
+        "id": 6,
+        "titulo": "MC Cabelinho joga dinheiro para o público em evento e causa alvoroço; vídeo",
+        "categoria": "entretenimento",
+        "autor": "Autor 6",
+        "imagem": {
+          "src": "https://s2.glbimg.com/U1diXVA-IXleYThG28MQmFDZq6I=/0x46:2352x1369/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_1f551ea7087a47f39ead75f64041559a/internal_photos/bs/2023/A/B/OeVTywTsKQQCMoUBmztg/whatsapp-image-2023-07-04-at-10.54.44.jpeg",
+          "alt": "Imagem 6"
+        },
+        "data": "2023-07-06",
+        "content": "<p>Conteúdo da notícia 6.</p>"
+      }
+    ]
+  }
