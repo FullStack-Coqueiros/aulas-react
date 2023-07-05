@@ -1,9 +1,18 @@
 form {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 input {
     padding: 6px 10px;
     border-radius: 4px;
+    height: 34px;
+    outline: none;
+    border: 1.5px solid gray;
+    margin-bottom: 20px;
+}
+
+button[type='submit'] {
+    margin: 12px 0;
 }

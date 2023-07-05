@@ -36,8 +36,8 @@ function Home() {
         <>
             <h1>Home</h1>
 
-            <button onClick={handleClick}>Ver Senai</button>
-            <button onClick={handleClick2}>Ver Audaces</button>
+            {/* <button onClick={handleClick}>Ver Senai</button>
+            <button onClick={handleClick2}>Ver Audaces</button> */}
 
             {renderizarQtdNoticias()}
 
@@ -60,7 +60,7 @@ function Home() {
                 titulo={tituloNoticia}
                 srcImage={srcImage} /> */}
 
-            <ComponenteFilho callback={handleComponenteFilho} />
+            {/* <ComponenteFilho callback={handleComponenteFilho} /> */}
 
         </>
     )
