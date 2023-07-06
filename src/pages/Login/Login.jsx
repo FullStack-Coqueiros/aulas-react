@@ -1,10 +1,11 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './styles.css'
-
+import { AuthContext } from '../../context/AuthContext';
+import { login as LoginApi } from '../../services/web';
 function Login() {
 
-    const passwordRef = useRef(null)
+    const { login } = useContext(AuthContext)
     
     const inputRefs = useRef({});
 
@@ -16,16 +17,9 @@ function Login() {
 
     useEffect(() => {
         setErrorForm(false)
-        // passwordRef.current.style.borderColor = 'black'
+        inputRefs.current.email.style.borderColor = 'black'
+        inputRefs.current.password.style.borderColor = 'black'
     }, [password])
-
-    /**
-     const [pacientes, setPacientes] = useState([])
-     useEffect(() => {
-        const resposta = await fetch('/pacientes')
-        setPacientes(resposta.json())
-     }, [])
-     */
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value)
@@ -40,25 +34,22 @@ function Login() {
         console.log('Dados digitados:')
         console.log('Email: ', email)
         console.log('Password: ', password)
-        if (email === 'yan.m.esteves@gmail.com' && password === '12345678') {
-            navigate('/')
-        } else {
-            inputRefs.current.email.style.backgroundColor = 'red';
+        const response = await LoginApi(email, password)
+        if (!response) {
             setErrorForm(true)
+            inputRefs.current.email.style.borderColor = 'red'
+            inputRefs.current.password.style.borderColor = 'red'
+            return;
         }
-    }
 
-    const changeColor = () => {
-        console.log('MUDAR COR')
-        console.log(inputRefs)
-        inputRefs.current.email.style.borderColor = 'red'
-        inputRefs.current.password.style.borderColor = 'red'
-        // inputRefs.current.email.style.borderColor = 'red';
-        // console.log(passwordRef)
+        login(response)
+        navigate('/')
     }
 
     return (
         <>
+            <h1>Login</h1>
+
             <form style={{ 'maxWidth': '320px' }} onSubmit={handleSubmit}>
 
                 <input required type="email" value={email}
@@ -75,8 +66,6 @@ function Login() {
 
                 <button type="submit">Entrar</button>
             </form>
-
-            <button onClick={changeColor}>Mudar cor</button>
         </>
     )
 }

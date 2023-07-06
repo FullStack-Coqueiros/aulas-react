@@ -31,10 +31,12 @@ function Home() {
 
             {renderizarQtdNoticias()}
 
-            {noticias.map(noticia => {
-                return <CardNoticia key={noticia.id} 
-                            titulo={noticia.titulo} srcImage={noticia.imagem.src} />
-            })}
+            <div className="noticias-list">
+                {noticias.map(noticia => {
+                    return <CardNoticia key={noticia.id} 
+                                titulo={noticia.titulo} srcImage={noticia.imagem.src} />
+                })}
+            </div>            
 
             {/* {temNoticia ? (
                 <CardNoticia

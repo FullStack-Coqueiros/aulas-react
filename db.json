@@ -72,5 +72,19 @@
       "data": "2023-07-06",
       "content": "<p>Conteúdo da notícia 6.</p>"
     }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "yan.m.esteves@gmail.com",
+      "password": "12345678",
+      "jwt": "jwt_token_user1"
+    },
+    {
+      "id": 2,
+      "email": "user2@example.com",
+      "password": "password2",
+      "jwt": "jwt_token_user2"
+    }
   ]
 }

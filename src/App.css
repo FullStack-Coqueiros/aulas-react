@@ -50,8 +50,10 @@
 .App {
   display: block;
   margin: 0 auto;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
 }
 
 .dark-theme {
@@ -71,4 +73,15 @@
 .menu-item {
   cursor: pointer;
   user-select: none;
+}
+
+.noticias-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.noticias-list * {
+  margin: 10px 15px;
 }
