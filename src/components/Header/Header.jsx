@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import './styles.css';
+import { useContext } from "react";
+import { ThemeContext } from '../../context/ThemeContext'
 
 function Header() {
+
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
     <nav className="menu-nav">
@@ -21,6 +25,10 @@ function Header() {
 
         <li className="menu-item">
           <NavLink to="semana-06">Semana 06 / 07</NavLink>
+        </li>
+
+        <li className="menu-item" onClick={toggleTheme}>
+          Alterar Tema (Atual: {theme})
         </li>
 
       </ul>

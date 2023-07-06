@@ -11,11 +11,15 @@ import Header from './components/Header/Header.jsx'
 import Login from './pages/Login/Login.jsx'
 import Noticias from './pages/Noticias/Noticias.jsx'
 import Task from './pages/Task-Semana06/Task.jsx'
+import { useContext } from 'react'
+import { ThemeContext } from './context/ThemeContext'
 
 function App() {
 
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className='App'>
+    <div className={theme === 'light' ? 'App' : 'App dark-theme'}>
       <Router>
         <Header />
 

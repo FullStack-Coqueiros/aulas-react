@@ -1,8 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
   text-align: center;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
 }
 
 .logo {
@@ -39,4 +45,30 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.App {
+  display: block;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dark-theme {
+  background: #333;
+  color: white;
+}
+
+.dark-theme a {
+  color: white !important;
+}
+
+.dark-theme button {
+  background-color: #F60074;
+  color: white;
+}
+
+.menu-item {
+  cursor: pointer;
+  user-select: none;
 }
