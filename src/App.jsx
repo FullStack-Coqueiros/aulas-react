@@ -15,9 +15,11 @@ import { useContext } from 'react'
 import { ThemeContext } from './context/ThemeContext'
 
 function App() {
+
   const { theme } = useContext(ThemeContext)
+
   return (
-    <div className={theme === 'light' ? 'App light-theme' : 'App dark-theme'}>
+    <div className={theme === 'light' ? 'App' : 'App dark-theme'}>
       <Router>
         <Header />
 

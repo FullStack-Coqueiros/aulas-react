@@ -67,3 +67,8 @@
   background-color: #F60074;
   color: white;
 }
+
+.menu-item {
+  cursor: pointer;
+  user-select: none;
+}
