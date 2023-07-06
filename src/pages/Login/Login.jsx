@@ -4,8 +4,6 @@ import './styles.css'
 
 function Login() {
 
-    const passwordRef = useRef(null)
-    
     const inputRefs = useRef({});
 
     const [email, setEmail] = useState()
@@ -16,16 +14,7 @@ function Login() {
 
     useEffect(() => {
         setErrorForm(false)
-        // passwordRef.current.style.borderColor = 'black'
     }, [password])
-
-    /**
-     const [pacientes, setPacientes] = useState([])
-     useEffect(() => {
-        const resposta = await fetch('/pacientes')
-        setPacientes(resposta.json())
-     }, [])
-     */
 
     const handleEmailChange = (event) => {
         setEmail(event.target.value)
@@ -48,14 +37,8 @@ function Login() {
         }
     }
 
-    const changeColor = () => {
-        console.log('MUDAR COR')
-        console.log(inputRefs)
-        inputRefs.current.email.style.borderColor = 'red'
-        inputRefs.current.password.style.borderColor = 'red'
-        // inputRefs.current.email.style.borderColor = 'red';
-        // console.log(passwordRef)
-    }
+    // inputRefs.current.email.style.borderColor = 'red'
+    // inputRefs.current.password.style.borderColor = 'red'
 
     return (
         <>
@@ -75,8 +58,6 @@ function Login() {
 
                 <button type="submit">Entrar</button>
             </form>
-
-            <button onClick={changeColor}>Mudar cor</button>
         </>
     )
 }
