@@ -1,8 +1,12 @@
-import { useState, useEffect, useRef } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect, useRef, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { LoginApi } from '../../services/web'
+import { AuthContext } from '../../context/AuthContext'
 import './styles.css'
 
 function Login() {
+
+    const { login } = useContext(AuthContext)
 
     const inputRefs = useRef({});
 
@@ -26,22 +30,21 @@ function Login() {
 
     const handleSubmit = async (event) => {
         event.preventDefault()
-        console.log('Dados digitados:')
-        console.log('Email: ', email)
-        console.log('Password: ', password)
-        if (email === 'yan.m.esteves@gmail.com' && password === '12345678') {
-            navigate('/')
-        } else {
-            inputRefs.current.email.style.backgroundColor = 'red';
+        const response = await LoginApi(email, password)
+        if (!response) {
             setErrorForm(true)
+            inputRefs.current.email.style.borderColor = 'red'
+            inputRefs.current.password.style.borderColor = 'red'
+            return;
         }
-    }
 
-    // inputRefs.current.email.style.borderColor = 'red'
-    // inputRefs.current.password.style.borderColor = 'red'
+        login(response)
+        navigate('/')
+    }
 
     return (
         <>
+            <h1>Login</h1>
             <form style={{ 'maxWidth': '320px' }} onSubmit={handleSubmit}>
 
                 <input required type="email" value={email}

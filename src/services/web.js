@@ -6,7 +6,7 @@ export async function getAll() {
     return formatado
 }
 
-export async function login(email, password) {
+export async function LoginApi(email, password) {
     const response = await fetch(`${URL_API}/usuarios`)
     const usuarios = await response.json()
     const usuario = usuarios.find(usuario => 
