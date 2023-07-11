@@ -15,6 +15,7 @@ import Task from './pages/Task-Semana06/Task.jsx'
 import { useContext } from 'react'
 import { ThemeContext } from './context/ThemeContext'
 import { AuthContext } from './context/AuthContext'
+import Bootstrap from './pages/Bootstrap/Bootstrap.jsx'
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
         { isLoggedIn && <Header />}
 
         <Routes>
+          <Route path="/bootstrap" element={<Bootstrap />} />
+
           <Route path="/login" element={!isLoggedIn ? <Login /> : <Navigate to="/home" />} />
 
           <Route path="/" element={isLoggedIn ? <Home /> : <Navigate to="/login" />} />

@@ -67,3 +67,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.custom-class {
+  background-color: red !important;
+  color: white !important;
+}
+
+.bg-black {
+  background-color: black;
+}
